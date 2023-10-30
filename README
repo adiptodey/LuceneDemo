@@ -1,0 +1,7 @@
+cd LuceneDemo/src/com/LuceneDemo
+javac -cp ../../../lib -d ../../../target FileGeneration.java
+cd ../../../target/
+java com.LuceneDemo.FileGeneration
+cd ../src
+java -cp ../lib/lucene-demo-9.8.0.jar:../lib/lucene-core-9.8.0.jar org.apache.lucene.demo.IndexFiles -docs resources/
+java -cp ../lib/lucene-demo-9.8.0.jar:../lib/lucene-core-9.8.0.jar:../lib/lucene-analysis-common-9.8.0.jar:../lib/lucene-queryparser-9.8.0.jar org.apache.lucene.demo.SearchFiles
